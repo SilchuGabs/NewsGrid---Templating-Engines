@@ -1,4 +1,4 @@
-:root {
+    :root {
     --primary-color: #c72727;
     --secondary-color: #f99500;
     --light-color: #f3f3f3;
@@ -33,12 +33,12 @@ ul {
     list-style: none;
 }
 
-img {
-    width: 100%;
-}
-
 p {
     margin: .5rem 0;
+}
+
+img {
+    width: 100%;
 }
 
 h1,
@@ -49,7 +49,7 @@ h5,
 h6 {
     font-family: 'Staatliches', cursive;
     margin-bottom: .55rem;
-    line-height: 1.3
+    line-height: 1.3;
 }
 
 
@@ -65,23 +65,23 @@ h6 {
 .category {
     display: inline-block;
     color: #fff;
-    font-size: .55rem;
+    font-size: 0.55rem;
     text-transform: uppercase;
-    padding: .4rem .6rem;
+    padding: 0.4rem 0.6rem;
     border-radius: 15px;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 .category-sports {
-    background: var(--sports-color);
+    background: var(--sports-color)
 }
 
 .category-ent {
-    background: var(--ent-color);
+    background: var(--ent-color)
 }
 
 .category-tech {
-    background: var(--tech-color);
+    background: var(--tech-color)
 }
 
 .btn {
@@ -93,25 +93,25 @@ h6 {
 }
 
 .btn-light {
-    background: var(--light-color);
+    background: var(--light-color)
 }
 
 .btn-primary {
-    background: var(--primary-color);
+    background: var(--primary-color)
 }
 
 .btn-secondary {
-    background: var(--secondary-color);
-}
-
-.btn:hover {
-    opacity: 0.9;
+    background: var(--secondary-color)
 }
 
 .btn-block {
     display: block;
     width: 100%;
     text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.9;
 }
 
 .card {
@@ -173,9 +173,13 @@ h6 {
     padding: 3rem
 }
 
+.l-heading {
+    font-size: 3rem;
+}
+
 .list li {
     padding: .5rem 0;
-    border-bottom: #555 dotter 1px;
+    border-bottom: #555 dotted 1px;
     width: 90%;
 }
 
@@ -184,7 +188,7 @@ h6 {
 }
 
 
-/* Inner page grid containeer */
+/* Inner page grid container */
 
 .page-container {
     display: grid;
@@ -194,7 +198,7 @@ h6 {
 }
 
 .page-container>*:first-child {
-    grid-row: 1/span 3;
+    grid-row: 1 / span 3;
 }
 
 
@@ -235,7 +239,7 @@ h6 {
 
 #main-nav ul li a:hover {
     background: var(--light-color);
-    color: var(--dark-color)
+    color: var(--dark-color);
 }
 
 #main-nav .social {
@@ -298,11 +302,24 @@ h6 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
-    grid-column: 1 /span 2;
+    align-items: center;
+    grid-column: 1 / span 2;
 }
 
 #home-articles .articles-container>*:last-child {
-    grid-column: 2 /span 2;
+    grid-column: 2 / span 2;
+}
+
+#article .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    padding: 0.5rem;
+}
+
+#article .meta .category {
+    margin-top: 0.4rem;
 }
 
 
@@ -329,18 +346,16 @@ h6 {
 
 #main-footer .footer-container>*:last-child {
     background: #444;
-    grid-column: 1/span 4;
-    padding: .4rem;
+    grid-column: 1 / span 4;
+    padding: .5rem;
     text-align: center;
-    font-size: 0.785rem;
+    font-size: 0.75rem;
 }
 
 #main-footer .footer-container input[type='email'] {
     width: 90%;
-    padding: .5rem;
-    margin-bottom: .5rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 #main-footer .footer-container input[type='submit'] {
-    width: 90%;
-}
