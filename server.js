@@ -10,7 +10,7 @@
 /* ----------------------------- Global Imports ----------------------------- */
 
 const path = require('path')
-const PORT = 3000;
+const PORT = 8000;
 const express = require('express')
 const app = express();
 
@@ -51,7 +51,7 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         homeClass: '',
-        aboutClass: 'current'
+        aboutClass: '"current"'
     })
 })
 
