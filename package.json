@@ -1,0 +1,25 @@
+{
+  "name": "newsgrid",
+  "version": "1.0.0",
+  "description": "Website using Templating Engines",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilchuGabs/NewsGrid.git"
+  },
+  "author": "Silvana GF",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SilchuGabs/NewsGrid/issues"
+  },
+  "homepage": "https://github.com/SilchuGabs/NewsGrid#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "node": "^16.0.0"
+  }
+}
